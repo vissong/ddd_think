@@ -3,7 +3,7 @@ package repository
 import (
 	"fmt"
 
-	"ddd_think/demo.message_server/entity"
+	"github.com/vissong/ddd_think/demo.message_server/internal/entity"
 )
 
 type message struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"ddd_think/demo.message_server/entity"
+	"github.com/vissong/ddd_think/demo.message_server/internal/entity"
 )
 
 func TestSave1(t *testing.T) {

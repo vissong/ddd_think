@@ -1,8 +1,8 @@
 package transaction
 
 import (
-	"github.com/vissong/ddd_think/demo.message_server/entity"
-	"github.com/vissong/ddd_think/demo.message_server/repository"
+	"github.com/vissong/ddd_think/demo.message_server/internal/entity"
+	"github.com/vissong/ddd_think/demo.message_server/internal/repository"
 )
 
 // Save 保存消息

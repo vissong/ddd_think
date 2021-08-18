@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/vissong/ddd_think/demo.message_server/entity"
+	"github.com/vissong/ddd_think/demo.message_server/internal/entity"
 )
 
 // IRepo 存储的接口，声明了存储需要提供的接口
