@@ -20,13 +20,13 @@ type IRepo interface {
 	List(num int) []*Entity
 }
 
-type InterAction interface {
+type Interaction interface {
 	Get() *Entity
 	QueryFrom() int
 }
 
 // New ...
-func New(content string) InterAction {
+func New(content string) Interaction {
 	return &message{entity: &Entity{
 		ID:      MsgID(uuid.New().String()),
 		Content: content,
