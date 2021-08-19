@@ -10,7 +10,7 @@ type message struct {
 	client interface{}
 }
 
-func New() IRepo {
+func New() IMessageRepo {
 	return &message{client: nil}
 }
 
