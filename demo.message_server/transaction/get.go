@@ -8,5 +8,5 @@ import (
 // Save 保存消息
 func Save(content string) message.MsgID {
 	msg := message.New("test msg")
-	return ds.New().Save(msg)
+	return ds.New().Save(msg.Get())
 }
