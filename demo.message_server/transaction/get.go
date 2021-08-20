@@ -10,7 +10,6 @@ import (
 
 // Save 保存消息
 func Save(content string) entity.MsgID {
-
 	oldMsg := message.LoadByID("abc")
 	fmt.Println(oldMsg.Get())
 

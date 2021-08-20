@@ -6,4 +6,3 @@ type Entity struct {
 }
 
 type MsgID string
-
