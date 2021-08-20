@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/vissong/ddd_think/demo.message_server/internal/message"
+	"github.com/vissong/ddd_think/demo.message_server/internal/message/entity"
 )
 
 func TestSave1(t *testing.T) {
@@ -14,7 +14,7 @@ func TestSave1(t *testing.T) {
 	tests := []struct {
 		name string
 		args args
-		want message.MsgID
+		want entity.MsgID
 	}{
 		// TODO: Add test cases.
 		{"1", args{content: "abc"}, "abc"},

@@ -3,34 +3,34 @@ package ds
 import (
 	"fmt"
 
-	"github.com/vissong/ddd_think/demo.message_server/internal/message"
+	"github.com/vissong/ddd_think/demo.message_server/internal/message/entity"
 )
 
 type messageDS struct {
 	client interface{} // may be mysql,redis,rpc
 }
 
-func New() message.IRepo {
+func New() entity.Repository {
 	return &messageDS{client: nil}
 }
 
-func (m messageDS) Save(msg *message.Entity) message.MsgID {
+func (m messageDS) Save(msg *entity.Entity) entity.MsgID {
 	fmt.Println("Save", msg)
 	return "uuid"
 }
 
-func (m messageDS) Get(id message.MsgID) *message.Entity {
+func (m messageDS) Get(id entity.MsgID) *entity.Entity {
 	fmt.Println("Get", id)
-	return &message.Entity{
+	return &entity.Entity{
 		ID:      id,
 		Content: "messageDS content",
 	}
 }
 
-func (m messageDS) List(num int) []*message.Entity {
+func (m messageDS) List(num int) []*entity.Entity {
 	fmt.Println("List", num)
-	var result []*message.Entity
-	result = append(result, &message.Entity{
+	var result []*entity.Entity
+	result = append(result, &entity.Entity{
 		ID:      "uuid",
 		Content: "messageDS content",
 	})
