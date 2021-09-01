@@ -2,7 +2,7 @@ package entity
 
 type Entity struct {
 	ID      MsgID
-	Content string
+	Content string `db:"content"`
 }
 
 type MsgID string

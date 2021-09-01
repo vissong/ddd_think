@@ -10,6 +10,10 @@ type messageDS struct {
 	client interface{} // may be mysql,redis,rpc
 }
 
+type DO struct {
+	entity.Entity
+}
+
 func New() entity.Repository {
 	return &messageDS{client: nil}
 }
